@@ -1,6 +1,5 @@
 package com.example.a1laboras
 
-import android.graphics.Color
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
@@ -13,15 +12,10 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val button = findViewById<Button>(R.id.button)
-        val colorButton = findViewById<Button>(R.id.colorButton)
         val textView = findViewById<TextView>(R.id.textView)
 
         button.setOnClickListener {
-            textView.text = "Mygtukas paspaustas"
-        }
-
-        colorButton.setOnClickListener {
-            textView.setTextColor(Color.RED)
+            textView.text = "Paspaudem mygtuka"
         }
     }
 }
